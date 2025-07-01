@@ -5,6 +5,7 @@ body {
   font-family: ubuntu, sans;
 }
 
+/* Navbar CSS */
 .navbar {
   background-color: bisque;
   display: flex;
@@ -40,6 +41,18 @@ body {
 .links #hamburger {
   display: none;
 }
+
+/* Add Product CSS */
+.add {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.add .addProduct{
+  cursor: pointer;
+}
+
+/* Product Page CSS */
 #productList {
   display: flex;
   align-items: center;
@@ -91,14 +104,7 @@ body {
 .details .rating img {
   height: 12px;
 }
-
-/* Add Product CSS */
-.addProduct {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  cursor: pointer;
-}
+/* Form CSS */
 form {
   width: 47vw;
   margin: auto;
@@ -114,8 +120,7 @@ form {
 
 }
 fieldset{
-  border-radius: 5px;
-  
+  border-radius: 5px;  
 }
 form legend {
   font-size: 20px;
