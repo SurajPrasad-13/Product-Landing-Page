@@ -60,6 +60,7 @@ body {
   flex-wrap: wrap;
   top: 0;
   left: 0;
+  transition: opacity ease-in-out 0.2s;
 }
 .product {
   display: flex;
@@ -74,11 +75,39 @@ body {
   border: 1px solid gray;
   cursor: pointer;
 }
+.product .productImg{
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 15px;
+}
 .product .productImg img {
   object-fit: cover;
   height: 230px;
   width: 180px;
   border-radius: 10px;
+  padding: 5px;
+}
+.productImg .editProduct{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 5px;
+}
+.productImg .editProduct div{
+  height: 35px;
+  width: 35px;
+  background-color: rgb(240, 240, 240);
+  border-radius: 8px;
+  &:hover{
+    transform: scale(1.1);
+    transition: all ease-in-out 0.1s;
+  }
+}
+.productImg .editProduct img{
+  height: 20px;
+  width: 20px;
+  padding: 7px;
 }
 .details .productName {
   font-weight: bold;
@@ -117,7 +146,6 @@ form {
   transform: translate(-50% ) ;
   background:linear-gradient(to bottom, white,rgb(249, 229, 204) 20%,white );
   box-shadow: 1px 4px 10px 0px black;
-
 }
 fieldset{
   border-radius: 5px;  
@@ -148,7 +176,7 @@ form .formChild textarea{
   border: 1px solid gray;
   &:hover{
     transform: scale(1.1);
-    transition: all ease-in-out 0.2s ;
+    transition: scale ease-in-out 0.2s ;
   }
 }
 
@@ -186,3 +214,4 @@ form .formChild .cancel{
     font-size: 15px;
   }
 }
+
